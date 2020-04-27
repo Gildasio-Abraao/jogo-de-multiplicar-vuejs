@@ -30,14 +30,12 @@ let numero = new Vue({
             let usuario = document.getElementById('user');
             let vitoria = document.getElementById('victory');
             let musica = document.getElementById('musica');
+            let som = document.getElementById('som');
             if(numero.n4 >= 10) {
                 vitoria.style = 'display: block;';
                 usuario.style = 'display: none;';
-<<<<<<< HEAD
-                musica.setAttribute('autoplay','')
-=======
-                musica.setAttribute('src', 'Michael Jackson - Billie Jean (Official Video).mp3');
->>>>>>> 50bb49794a0a8ea420190de47c3fb95666c35fc3
+                musica.setAttribute('autoplay','');
+                som.setAttribute('type', 'audio/mpeg');
         }
             else{
                 vitoria.style = 'display: none;';

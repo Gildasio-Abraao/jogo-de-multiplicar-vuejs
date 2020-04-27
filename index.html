@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://kit.fontawesome.com/5acb55238f.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body onload="reloadPage()">
+                        <!--AO USUARIO GANHAR O JOGO-->
+                        <!--O JOGO-->
+        <div class="container" id="user">
+            <div id="contagem"></div>
+            <div class="displayNum">
+                <h1>Boa sorte!!!!</h1>
+                <span id="n1">{{ n1 }}</span><i class="fas fa-times"></i>
+                <span id="n2">{{ n2 }}</span>
+            </div>
+            <div class="userInt">
+                <input type="number" v-model="n3" id="num3">
+                <button v-on:click="checar">Confirmar</button>
+            </div>
+            <div id="pontos">
+                <p>Sua pontuação é:<span id="ponto">{{ n4 }}</span> </p>
+                <p>Máximo de pontos: <span>10 pontos</span></p>
+            </div>
+        </div>
+
+        <div id="victory">
+            <p>VITÓRIA</p>
+            <p>Usou a calculadora né vagabundo kkkkk</p>
+            <audio autoplay>
+                <source src="Michael Jackson - Billie Jean (Official Video).mp3" type="audio/mpeg">
+            </audio>
+            <img src="images/michael.gif">
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

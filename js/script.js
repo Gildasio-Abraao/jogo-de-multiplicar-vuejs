@@ -29,9 +29,11 @@ let numero = new Vue({
             }
             let usuario = document.getElementById('user');
             let vitoria = document.getElementById('victory');
+            let musica = document.getElementById('musica');
             if(numero.n4 >= 10) {
                 vitoria.style = 'display: block;';
                 usuario.style = 'display: none;';
+                musica.setAttribute('autoplay', '');
         }
             else{
                 vitoria.style = 'display: none;';

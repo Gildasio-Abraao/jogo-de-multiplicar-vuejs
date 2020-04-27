@@ -33,7 +33,11 @@ let numero = new Vue({
             if(numero.n4 >= 10) {
                 vitoria.style = 'display: block;';
                 usuario.style = 'display: none;';
+<<<<<<< HEAD
                 musica.setAttribute('autoplay','')
+=======
+                musica.setAttribute('src', 'Michael Jackson - Billie Jean (Official Video).mp3');
+>>>>>>> 50bb49794a0a8ea420190de47c3fb95666c35fc3
         }
             else{
                 vitoria.style = 'display: none;';

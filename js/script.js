@@ -34,6 +34,7 @@ let numero = new Vue({
             if(numero.n4 >= 10) {
                 vitoria.style = 'display: block;';
                 usuario.style = 'display: none;';
+                document.body.style = "background-color: black;";
                 musica.setAttribute('autoplay','');
                 som.setAttribute('type', 'audio/mpeg');
         }
